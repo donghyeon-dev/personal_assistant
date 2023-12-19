@@ -1,0 +1,14 @@
+spring:
+  cloud:
+    openfeign:
+      client:
+        config:
+          default:
+            connectTimeout: 5000
+            readTimeout: 5000
+            loggerLevel: full
+
+logging:
+  level:
+    com.autocat.com.autocat.personal_assistant: DEBUG
+    com.autocat.personal_assistant.client.OpenAIClient: DEBUG
